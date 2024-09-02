@@ -21,8 +21,8 @@ def div(x,y):
 def calculate():
     # Get the operation and numbers from the query parameters
     operation = request.args.get('operation')
-    x = float(request.args.get('x', 0))
-    y = float(request.args.get('y', 0))
+    x = float(request.args.get('a', 0))
+    y = float(request.args.get('b', 0))
 
     # Perform the requested operation
     if operation == 'add':
